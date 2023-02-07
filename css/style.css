@@ -53,4 +53,13 @@
   border-color: #83a598;
   width: 30vw;
   height: 50vh;
+  transition: 0.5s ease-in-out;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.items:hover {
+  transform: scale(1.08);
+  background-color: #ebdbb2;
 }
