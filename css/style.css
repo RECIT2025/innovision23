@@ -11,27 +11,43 @@
 #banner {
   background-image: url("../static/file.gif");
   background-attachment: fixed;
-}
-
-/*#tracks {
-  background-image: url("../static/purple-arrow.gif");
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
 }
-*/
 
 .banimg {
   width: 800px;
   height: 800px;
 }
 
-.items {
-  width: 500px;
-  height: 500px;
-  background-color: white;
+#tracks {
+  background-image: url("/home/raxen/Pictures/Gifs/bulb.gif");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header1 > img {
+    width: 100px;
+    height: auto;
+    object-fit: fit;
+
 }
 
 .container {
-  display: flex;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content:center;
+    align-content:space-between;
+    gap: 1vw;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.container div{
+    object-fit:cover;
+    border-style: solid;
+    border-color: #83A598;
+    width: 21rem;
+    height: 30rem;
 }
