@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.page {
+  height: 100vh;
+  width: 100vw;
+}
+
+#banner {
+  background-image: url("../static/file.gif");
+  background-attachment: fixed;
+}
+
+/*#tracks {
+  background-image: url("../static/purple-arrow.gif");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+*/
+
+.banimg {
+  width: 800px;
+  height: 800px;
+}
+
+.items {
+  width: 500px;
+  height: 500px;
+  background-color: white;
+}
+
+.container {
+  display: flex;
+}
