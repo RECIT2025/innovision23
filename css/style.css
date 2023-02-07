@@ -4,8 +4,8 @@
 }
 
 .page {
-  height: 100vh;
   width: 100vw;
+  height: 100vh;
 }
 
 #banner {
@@ -14,10 +14,20 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.banimgdiv {
+  position: relative;
+  top: -9vw;
+}
 
 .banimg {
-  width: 800px;
-  height: 800px;
+  width: auto;
+  height: 30vh;
+}
+
+.header1 > img {
+  width: 15vw;
+  height: auto;
+  object-fit: contain;
 }
 
 #tracks {
@@ -27,27 +37,20 @@
   background-size: cover;
 }
 
-.header1 > img {
-    width: 100px;
-    height: auto;
-    object-fit: fit;
-
-}
-
 .container {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content:center;
-    align-content:space-between;
-    gap: 1vw;
-    position: relative;
-    overflow-y: hidden;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: space-between;
+  gap: 0.5vw;
+  position: relative;
+  overflow-y: hidden;
 }
 
-.container div{
-    object-fit:cover;
-    border-style: solid;
-    border-color: #83A598;
-    width: 21rem;
-    height: 30rem;
+.container div {
+  object-fit: cover;
+  border-style: solid;
+  border-color: #83a598;
+  width: 30vw;
+  height: 50vh;
 }
