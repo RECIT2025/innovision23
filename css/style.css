@@ -1,6 +1,49 @@
+:root {
+  --color-black: #1d2021;
+  --color-gray: #282828;
+  --color-red: #cc241d;
+  --color-lightred: #fb4934;
+  --color-green: #98971a;
+  --color-lightgreen: #b8bb26;
+  --color-yellow: #d79921;
+  --color-lightyellow: #fabd2f;
+  --color-blue: #458588;
+  --color-lightblue: #83a598;
+  --color-mangeta: #b16286;
+  --color-lightmagenta: #d3869b;
+  --color-cyan: #689d6a;
+  --color-lightcyan: #8ec07c;
+  --color-white: #928374;
+  --color-lightwhite: #d5c4a1;
+  --color-orange: #d65d0e;
+  --color-lightorange: #fe8019;
+}
 * {
   padding: 0;
   margin: 0;
+}
+
+@font-face {
+  font-family: "blox";
+  src: url("../static/fonts/Blox2.ttf");
+}
+@font-face {
+  font-family: "steak";
+  src: url("../static/fonts/Steak Rough.ttf");
+}
+@font-face {
+  font-family: "metallord";
+  src: url("../static/fonts/METALORD.TTF");
+}
+@font-face {
+  font-family: "saucer";
+  src: url("../static/fonts/SaucerBB.ttf");
+}
+
+h2 {
+  font-family: steak;
+  font-size: 29px;
+  color: var(--color-red);
 }
 
 .page {
@@ -14,6 +57,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .banimgdiv {
   position: relative;
   top: -9vw;
@@ -44,13 +88,21 @@
   align-content: space-between;
   gap: 0.5vw;
   position: relative;
+
+  /* hide scrollbar */
   overflow-y: hidden;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.container::-webkit-scrollbar {
+  display: none; /* chrome */
 }
 
 .container div {
   object-fit: cover;
   border-style: solid;
-  border-color: #83a598;
+  border-color: var(--color-cyan);
   width: 30vw;
   height: 50vh;
   transition: 0.5s ease-in-out;
@@ -61,30 +113,29 @@
 
 .items:hover {
   transform: scale(1.08);
-  background-color: #ebdbb2;
+  background-color: var(--color-blue);
 }
-.fore{
+.fore {
   margin-right: 86px;
 }
-.box{
+.box {
   margin-left: 60px;
 }
-.it{
-  background-color: #88C0D0
-  ;
+
+.it {
+  background-color: var(--color-lightorange);
 }
 .it:hover {
   transform: scale(1.08);
-  background-color: #5E81AC
-
-
+  background-color: #5e81ac;
 }
 
-.rules{
+.rules {
   display: flex;
   justify-content: space-around;
   text-align: left;
 }
-#text{
+
+#text {
   padding-top: 20px;
 }
