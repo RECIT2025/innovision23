@@ -2,12 +2,46 @@
   padding: 0;
   margin: 0;
 }
+html {
+  scroll-behavior: smooth;
+  
+}
+
+
+#nob{
+width: 80px;
+object-fit: contain;
+}
 
 .page {
   width: 100vw;
   height: 100vh;
+  
+}
+.navbar{
+  background-color: black;
+  overflow: hidden;
+  display: flex;
+
+  
+  
+}
+.navbar a{
+ 
+  float: right;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  padding:20px;
+  text-decoration: solid;
+
 }
 
+.navbar a:hover{
+  background-color: #ebdbb2;
+  color: black;
+
+}
 #banner {
   background-image: url("../static/file.gif");
   background-attachment: fixed;
@@ -62,4 +96,29 @@
 .items:hover {
   transform: scale(1.08);
   background-color: #ebdbb2;
+}
+.fore{
+  margin-right: 86px;
+}
+.box{
+  margin-left: 60px;
+}
+.it{
+  background-color: #88C0D0
+  ;
+}
+.it:hover {
+  transform: scale(1.08);
+  background-color: #5E81AC
+
+
+}
+
+.rules{
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+}
+#text{
+  padding-top: 20px;
 }
