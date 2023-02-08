@@ -39,11 +39,16 @@
   font-family: "saucer";
   src: url("../static/fonts/SaucerBB.ttf");
 }
+h1 {
+    font-family: metallord;
+    font-size: 3.4rem;
+    color: var(--color-black);
+}
 
 h2 {
   font-family: steak;
-  font-size: 29px;
-  color: var(--color-red);
+  font-size: 3rem;
+  color: var(--color-mangeta);
 }
 
 .page {
@@ -138,4 +143,45 @@ h2 {
 
 #text {
   padding-top: 20px;
+}
+
+#dates {
+    /* debug */ 
+    background-color: var(--color-red);
+}
+.date-con {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 0.5vw;
+}
+
+.date-con  div {
+  width: 30vw;
+  height: 50vh;
+  border-color: var(--color-cyan);
+  object-fit: cover;
+  border-style: solid;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  transition: 0.5s ease-in-out;
+}
+
+.last{
+    background-color: var(--color-lightwhite);
+}
+
+
+#prizes {
+    /* debug */ 
+    background-color: var(--color-yellow);
+
+}
+
+
+#registration {
+    /* debug */ 
+    background-color: var(--color-blue);
 }
