@@ -63,3 +63,28 @@
   transform: scale(1.08);
   background-color: #ebdbb2;
 }
+.fore{
+  margin-right: 86px;
+}
+.box{
+  margin-left: 60px;
+}
+.it{
+  background-color: #88C0D0
+  ;
+}
+.it:hover {
+  transform: scale(1.08);
+  background-color: #5E81AC
+
+
+}
+
+.rules{
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+}
+#text{
+  padding-top: 20px;
+}
