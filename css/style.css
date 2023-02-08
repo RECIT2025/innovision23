@@ -49,6 +49,7 @@ html {
 }
 h1 {
   color: var(--color-black);
+  font-family: sans-serif;
 }
 
 h2 {
@@ -298,4 +299,83 @@ ul {
 .logos {
   display: flex;
   justify-content: space-between;
+}
+.it{
+
+  background-color:black;
+  margin-top: 10px;
+  border-radius: 40px;
+    
+}
+
+.it:hover {
+  transition:0.3s ease-in-out;
+  background-color:#ECEFF4;
+  background-image: url(../static/2591340.avif);
+  background-repeat: no-repeat;
+  background-size: 80px;
+  background-position-x: center;
+  background-position-y: 20px;
+}
+.rul{
+ width: 80vh;
+  height: 60vh;
+  padding-top: 20px;
+  
+}
+#dem{
+  margin-left: 7rem;
+  margin-bottom: 44px;
+}
+#rulesbg{
+  
+  background-image: url("../static/abstract-background-molecules-technology-with-polygonal-shapes-connecting-dots-lines-connection-structure-big-data-visualization_7247-3451.avif");
+  overflow: hidden;
+}
+.ru{
+  text-align: center;
+  font-size: 2rem;
+  color:#ECEFF4;
+  position: absolute;
+  display: block;
+  
+
+}
+.front{
+  margin-bottom:9px;
+}
+
+#rulimg{
+  width: 60px;
+  height:60px;
+}
+.rules{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+#heading{
+  color: white;
+  font-size: 80px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 5px #E5E9F0, 0 0 5px #E5E9F0, 0 0 10px #E5E9F0
+    , 0 0 2px #E5E9F0
+    , 0 0 2px #E5E9F0
+    ;
+  }
+
+.box{
+  display: flex;
+  margin-right:80px;
+  position: relative;
+  gap: 10rem;
+  
+}
+#text{
+  display: block;
+  margin-left:40px;
+  padding-bottom: 2rem;
+  text-align: left;
+  color:black;
 }
