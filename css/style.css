@@ -228,14 +228,15 @@ button:hover {
 }
 .box {
   margin-left: 60px;
+
 }
 
 .it {
   background-color: var(--color-lightorange);
-}
+}ol
 .it:hover {
   transform: scale(1.08);
-  background-color: #5e81ac;
+
 }
 
 .rules {
@@ -250,6 +251,7 @@ button:hover {
 }
 
 #text {
+  font-family: sans-serif;
   padding-top: 20px;
 }
 
@@ -451,46 +453,48 @@ ul {
   justify-content: space-between;
 }
 .it {
-  background-color: black;
+  background-color: #5a004880;
   margin-top: 10px;
+  
   border-radius: 40px;
+  animation: pulsate 1.5s infinite alternate;  
+  border: 0.2rem solid #fff;
+  border-radius: 2rem;
+  padding: 0.4em;
+  box-shadow: 0 0 .2rem #fff,
+            0 0 .2rem #fff,
+            0 0 2rem #bc13fe,
+            0 0 0.8rem #bc13fe,
+            0 0 2.8rem #bc13fe,
+            inset 0 0 1.3rem #bc13fe; 
+            
+
 }
 
 .it:hover {
   transition: 0.3s ease-in-out;
-  background-color: #eceff4;
-  background-image: url(../static/2591340.avif);
-  background-repeat: no-repeat;
-  background-size: 80px;
-  background-position-x: center;
-  background-position-y: 20px;
+  background-color: #5a004880;
+}
+.it h1 {
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+
+}
+#text {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .rul{
   width: 40vw;
   height: 40vh;
   padding-top: 20px;
 }
-#dem {
-  margin-left: 7rem;
-  margin-bottom: 44px;
-  position: absolute;
-  right: 8rem;
-  font-size: 2rem;
-}
+
 #rulesbg {
-  background-image: url("../static/abstract-background-molecules-technology-with-polygonal-shapes-connecting-dots-lines-connection-structure-big-data-visualization_7247-3451.avif");
- 
+  background-image: url("../static/gifs/Bedroom-top.gif");
 }
-.ru {
-  text-align: center;
-  font-size: 3rem;
-  color: #eceff4;
-  position: absolute;
-  display: block;
-}
-.front {
-  margin-bottom: 9px;
-}
+
 
 #rulimg {
   width: 60px;
@@ -511,19 +515,14 @@ ul {
 }
 
 .box {
+  backdrop-filter: blur(5px);
   display: flex;
   margin-right: 80px;
   position: relative;
   gap: 2rem;
   
 }
-#text {
-  display: block;
-  margin-left: 40px;
-  padding-bottom: 2rem;
-  text-align: left;
-  color: black;
-}
+
 @media only screen and (max-width: 430px) {
   button {
     background-color: #60a5fa;
@@ -536,7 +535,7 @@ ul {
     }
     .it{
 
-      background-color:white;
+      
       margin-top: 10px;
       border-radius: 40px;
         
