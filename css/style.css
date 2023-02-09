@@ -24,6 +24,7 @@
 }
 html {
   scroll-behavior: smooth;
+  background-color: black;
 }
 
 #nob {
@@ -53,8 +54,7 @@ html {
 }
 
 .page {
-  width: 100vw;
-  height: 100vh;
+    min-height: 100vh;
 }
 button {
   background-color: #60a5fa;
@@ -108,8 +108,13 @@ button:hover {
 }
 
 .banimg {
-  width: auto;
-  height: 30vh;
+  height: 60vh;
+}
+
+@media only screen and (max-width: 430px) {
+    .banimg {
+        height: 30vh;
+    }
 }
 
 .header1 > img {
@@ -252,6 +257,8 @@ button:hover {
   width: 20vw;
   height: 50vh;
 
+  min-width: 190px;
+
   display: flex;
   flex-direction: column;
   object-fit: cover;
@@ -259,7 +266,7 @@ button:hover {
   justify-content: center;
   align-content: center;
   align-items: center;
-  font-size: 1rem;
+  font-size: 1.3rem;
   text-decoration: none;
   border-radius: 18px;
   background-color: #5a004880;
@@ -273,34 +280,16 @@ button:hover {
 }
 
 .date-box > span {
-    font-size: 28px;
+  font-size: 1rem;
   color: #fff;
   text-align: center;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
+  text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+    0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
 }
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
-      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  }
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
-      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-  }
-}
-.last img {
-  width: 100px;
-  height: 100px;
-}
-.abstract img {
-  width: 100px;
-  height: 100px;
-}
-.event img {
-  width: 100px;
-  height: 100px;
+.dates  img {
+    height: 50%;
+    max-width: 120px;
+    max-height: 120px;
 }
 
 #prizes {
@@ -377,10 +366,12 @@ button:hover {
 }
 footer {
   bottom: 0px;
+  color: white;
+  backdrop-filter: blur(10px);
 }
 .foot-cont {
   width: 100%;
-  height: 300px;
+  height: 200px;
   background-image: url("../static/ft-bg.png");
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
