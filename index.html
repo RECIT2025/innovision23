@@ -11,19 +11,7 @@
     <script src="index.js"></script>
 </head>
 
-<nav class="navbar" id="nav">
-    
-        <div>
-            <img src="./static/inovision-nobg.png" alt="" id="nob" >
-            <a href="#contact" >Contact</a>
-            <a href="#prize">Prizes</a>
-            <a href="#rules">Rules</a>
-            <a href="#tracks" class ="cont">Tracks</a>
-            
-        </div>
 
-
-</nav>
 
 <body id="body">
     <div id="banner" class="page">
@@ -38,7 +26,18 @@
                 <img class="banimg" src="./static/220 - Copy.png" />
             </center>
         </div>
+        <div>
+            <div class="navbar">
+                
+              <button><a href="#prizes">Prizes</a></button>
+              <button><a href="#rules">Rules</a></button>
+              <button ><a href="#tracks" class="cont" style="padding-left: 6px;">Tracks</a></button>
+              <button><a href="#dates" class="cont">Dates</a></button>
+            <button class="conbut" style="padding-left: 5px;"><a href="#footer">Contact</a></button>
+            </div>
+        </div>
     </div>
+    
 
     <div id="tracks" class="page container">
         <a href="https://forms.gle/n9ccbmXc9dVsXZiL8">
@@ -105,25 +104,64 @@
             </div>
         </div>
     </div>
-</a>
-    
-    <div id="rules" class="rules page">
-        <p>rules and regulations</p>
-    </div>
-    
-    <div id="dates" class="dates page">
-        <div class="date-con">
-            <div class="last">
+
+    <div id="rulesbg" class="page  rules">
+      
+        <h1 class="heading" id="rules">RULES</h1>
+        <div class="box" >
+        <div class="it container rul">
+            
+            <h1 class="ru glow" id="dem" >Rules for Project Demo</h1>
+            
+              <p id="text" style="padding-left: 10px">1. Maximum 4 per Team</p>
+                  <p id="text" style="padding-left: 10px">2. Abstract must be feasible
+                  </p>
+                  <p id="text" style="padding-left: 10px">3. All the objectives given in abstract should be showcased during
+                      Project Demo.
+                  </p>
+              
+          </div>
+  
+        <div class="it container rul front" >
+          <h1 class="ru  front" style="padding-left:10px; ">Rules for Forefront Ideas Presentation</h1>
+          
+            <p id="text" style="padding-left: 10px">1. Maximum 2 per Team</li>
+            <p id="text" style="padding-left: 10px">2. Finalized Presentation slides should not exceed more than 20.</li>
+            <p id="text" style="padding-left: 10px">3. Content must be precise to demonstrate the idea.</li>
+          
+        
+        </div>
+      </div>
+      </div>
+      </div>
+
+    <div id="dates" class="dates page date-con">
+        <div class="date-box last">
+            <span>
                 <h2>23-02-2023</h2>
-            </div>
-
-            <div class="abstract">
+            </span>
+            <span>
+                <img src="./static/schedule.png" />
+            </span>
+            <span>EVENT DATE</span>
+        </div>
+        <div class="date-box abstract">
+            <span>
                 <h2>26-02-2023</h2>
-            </div>
-
-            <div class="event">
+            </span>
+            <span>
+                <img src="./static/last-minute.png" />
+            </span>
+            <span>LAST DATE FOR REGISTRATION</span>
+        </div>
+        <div class="date-box event">
+            <span>
                 <h2>04-03-2023</h2>
-            </div>
+            </span>
+            <span>
+                <img src="./static/ppt.png" />
+            </span>
+            <span>SUBMISSION OF PPT</span>
         </div>
     </div>
 
@@ -131,5 +169,38 @@
 
     <div id="registration" class="registration page"></div>
 </body>
+<footer>
+    <div id="footer" class="foot-cont">
+        <div class="header">
+            <h1>Any queries feel free to mail us back</h1>
+        </div>
+        <p id="c">Contact</p>
+        <p id="c">
+            <a style="text-decoration: none; padding-top: -10px">innovision2023@rajalakshmi.edu.in</a>
+        </p>
+        <br />
+
+        <div class="con">
+            <div>
+                <ul>
+                    <li>
+                        <img src="./foot2.jpg" id="pic" style="width: 30px; height: 30px; border-radius: 50%" />
+                    </li>
+                    <li>Dr.Priya Vijay,Professor and Head/IT</li>
+                </ul>
+            </div>
+            <br />
+            <div>
+                <ul>
+                    <li>
+                        <img src="./foot2.jpg" style="width: 30px; height: 30px; border-radius: 50%" />
+                    </li>
+                    <li>Dr.A.Sathya,Associate Professor/IT</li>
+                </ul>
+            </div>
+        </div>
+        <br />
+    </div>
+</footer>
 
 </html>

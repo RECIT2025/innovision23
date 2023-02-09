@@ -24,13 +24,11 @@
 }
 html {
   scroll-behavior: smooth;
-  
 }
 
-
-#nob{
-width: 80px;
-object-fit: contain;
+#nob {
+  width: 80px;
+  object-fit: contain;
 }
 
 @font-face {
@@ -56,31 +54,48 @@ object-fit: contain;
 .page {
   width: 100vw;
   height: 100vh;
-  
 }
-.navbar{
-  background-color: black;
-  overflow: hidden;
-  display: flex;
+button{
+  background-color:#60a5fa;
+  border: none;
+  color: white;
+  padding: 15px 32px ;
+  padding-left: 13px;
+  padding-right: 14px;
+  text-align: center;
+  text-decoration: none;
+  display: flexbox;
+  margin-left: 10rem;
+  font-size: 16px;
+  border-radius: 10px;
+  opacity: 85%;
+  }
+  
 
-  
-  
-}
-.navbar a{
- 
-  float: right;
+.navbar a {
+   
   color: white;
   text-align: center;
   margin-top: 10px;
-  padding:20px;
+  padding: 20px;
+  display: flexbox;
+  justify-content: space-evenly;
   text-decoration: solid;
-
+  border-radius: 10px;
 }
 #tracks{
   background-image: url("../hex.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
+}
+button:hover {
+  transform: scale(1.08);
+  opacity: 100%;
+  transition:0.3s ease-in-out;
+  background-color:#6366f1;
+  
+  
 }
 .navbar a:hover{
   background-color: #ebdbb2;
@@ -218,8 +233,7 @@ object-fit: contain;
 }
 
 #dates {
-    /* debug */ 
-    background-color: var(--color-red);
+  background-image: url("../static/abstract-timekeeper.png");
 }
 .date-con {
   display: flex;
@@ -229,61 +243,71 @@ object-fit: contain;
   gap: 0.5vw;
 }
 
-.date-con  div {
-  width: 30vw;
+.date-box {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
   height: 50vh;
-  border-color: var(--color-cyan);
   object-fit: cover;
-  border-style: solid;
   justify-content: center;
   align-content: center;
   align-items: center;
-  transition: 0.5s ease-in-out;
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 15px 40px;
+  border-radius: 4px;
+  font-weight: normal;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+  backdrop-filter: blur(5px);
 }
-
-.last{
-    background-color: var(--color-lightwhite);
+.date-box:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 50px  50px 50px rgba(145, 92, 182, .4);
+  backdrop-filter: blur(5px);
 }
-
+.last img {
+  width: 100px;
+  height: 100px;
+}
+.abstract img {
+  width: 100px;
+  height: 100px;
+}
+.event img {
+  width: 100px;
+  height: 100px;
+}
 
 #prizes {
-    /* debug */ 
-    background-color: var(--color-yellow);
-
+  /* debug */
+  background-color: var(--color-yellow);
 }
-
 
 #registration {
-    /* debug */ 
-    background-color: var(--color-blue);
+  /* debug */
+  background-color: var(--color-blue);
 }
-.fore{
+.fore {
   margin-right: 86px;
 }
-.box{
+.box {
   margin-left: 60px;
 }
-.it{
-  background-color: #88C0D0
-  ;
+.it {
+  background-color: #88c0d0;
 }
 .it:hover {
   transform: scale(1.08);
-  background-color: #5E81AC
-
-
+  background-color: #5e81ac;
 }
 
-.rules{
+.rules {
   display: flex;
   justify-content: space-around;
   text-align: left;
 }
-.container a{
-  text-decoration: none;
-  color: black;
-}
-#text{
+#text {
   padding-top: 20px;
 }
 @media only screen and (max-width:430px)
@@ -329,5 +353,156 @@ font-size: small;
     border-radius: 5px;
   }
   
+
+}
+footer {
+  bottom: 0px;
+}
+.foot-cont {
+  width: 100%;
+  height: 300px;
+  background-image: url("../static/ft-bg.png");
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  font-family: sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.header h1 {
+  padding-top: 20px;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 650;
+}
+#c {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.con {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: left;
+  font-weight: 500;
+  padding: 10px;
+  font-size: 20px;
+
+  align-content: center;
+}
+.con ul {
+  display: inline-flex;
+  align-items: center;
+}
+ul {
+  list-style: none;
+}
+.con ul li {
+  padding-left: 10px;
+}
+.logos img {
+  height: 50px;
+  width: 250px;
+}
+.logos {
+  display: flex;
+  justify-content: space-between;
+}
+.it{
+
+  background-color:black;
+  margin-top: 10px;
+  border-radius: 40px;
+    
+}
+
+.it:hover {
+  transition:0.3s ease-in-out;
+  background-color:#ECEFF4;
+  background-image: url(../static/2591340.avif);
+  background-repeat: no-repeat;
+  background-size: 80px;
+  background-position-x: center;
+  background-position-y: 20px;
+}
+.rul{
+ width: 80vh;
+  height: 60vh;
+  padding-top: 20px;
+  
+}
+#dem{
+  margin-left: 7rem;
+  margin-bottom: 44px;
+  position: absolute;
+  right:8rem;
+  font-size: 2rem;
+ 
+}
+#rulesbg{
+  
+  background-image: url("../static/abstract-background-molecules-technology-with-polygonal-shapes-connecting-dots-lines-connection-structure-big-data-visualization_7247-3451.avif");
+  overflow: hidden;
+}
+.ru{
+  text-align: center;
+  font-size: 3rem;
+  color:#ECEFF4;
+  position: absolute;
+  display: block;
+}
+.front{
+  margin-bottom:9px;
+  
+}
+
+#rulimg{
+  width: 60px;
+  height:60px;
+}
+.rules{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+.heading{
+  color: white;
+  font-size: 80px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 5px #E5E9F0, 0 0 5px #E5E9F0, 0 0 10px #E5E9F0
+    , 0 0 2px #E5E9F0
+    , 0 0 2px #E5E9F0
+    ;
+  }
+
+.box{
+  display: flex;
+  margin-right:80px;
+  position: relative;
+  gap: 10rem;
+  
+}
+#text{
+  display: block;
+  margin-left:40px;
+  padding-bottom: 2rem;
+  text-align: left;
+  color:black;
+}
+@media only screen and (max-width: 430px) {
+  button{
+    background-color:#60a5fa;
+    border: none;
+    color: white;
+    padding: auto ;
+    margin-left: 10rem;
+    margin-top: 20px;
+    opacity: 85%;
+    }
+  
+
 
 }
