@@ -49,17 +49,9 @@ object-fit: contain;
   font-family: "saucer";
   src: url("../static/fonts/SaucerBB.ttf");
 }
-h1 {
-    font-family: metallord;
-    font-size: 3.4rem;
-    color: var(--color-black);
-}
 
-h2 {
-  font-family: steak;
-  font-size: 3rem;
-  color: var(--color-mangeta);
-}
+
+
 
 .page {
   width: 100vw;
@@ -84,7 +76,12 @@ h2 {
   text-decoration: solid;
 
 }
-
+#tracks{
+  background-image: url("../hex.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
 .navbar a:hover{
   background-color: #ebdbb2;
   color: black;
@@ -114,7 +111,7 @@ h2 {
 }
 
 #tracks {
-  background-image: url("/home/raxen/Pictures/Gifs/bulb.gif");
+  background-image: url("../hex.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -138,21 +135,62 @@ h2 {
   display: none; /* chrome */
 }
 
-.container div {
+.container .items {
   object-fit: cover;
   border-style: solid;
   border-color: var(--color-cyan);
   width: 30vw;
-  height: 50vh;
+  height: 84vh;
   transition: 0.5s ease-in-out;
   justify-content: center;
   align-content: center;
   align-items: center;
 }
-
+.items{
+   box-shadow: 5px 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  margin: 30px;
+  border-radius: 10px;
+}
+.tags{
+  font-family: sans-serif;
+  
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  color: white;
+  bottom: 0;
+  left: 85px;
+  
+  margin: 10px;
+  width: auto;
+  height: auto;
+  background-color: black;
+  border-radius: 5px;
+}
+.items h2{
+  font-family: sans-serif;
+}
+.desc{
+  margin: 10px;
+  text-align: center;
+  font-family: sans-serif;
+}
+.items img{
+  border-radius: 20px;
+  padding-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  height: 250px;
+}
 .items:hover {
+  color: white;
   transform: scale(1.08);
   background-color: var(--color-blue);
+  cursor: pointer;
 }
 .fore {
   margin-right: 86px;
@@ -241,6 +279,55 @@ h2 {
   justify-content: space-around;
   text-align: left;
 }
+.container a{
+  text-decoration: none;
+  color: black;
+}
 #text{
   padding-top: 20px;
+}
+@media only screen and (max-width:430px)
+{
+  .container .items {
+   
+    object-fit: cover;
+    border-style: solid;
+    border-color: var(--color-cyan);
+    width: 55vw;
+    height: 80vh;
+    transition: 0.5s ease-in-out;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    box-shadow: 5px 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: relative;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  .items img{
+    border-radius: 20px;
+    padding-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 130px;
+  }
+  .tags{
+    font-family: sans-serif;
+    
+    text-align: center;
+    position: absolute;
+    color: white;
+    top: 5px;
+    left: 115px;
+font-size: small;
+    width: 80px;
+    height: 90px;
+    background-color: rgba(35, 33, 33, 0.5);
+    border-radius: 5px;
+  }
+  
+
 }
