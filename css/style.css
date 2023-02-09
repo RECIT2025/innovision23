@@ -73,7 +73,6 @@ button{
   
 
 .navbar a {
-   
   color: white;
   text-align: center;
   margin-top: 10px;
@@ -97,11 +96,7 @@ button:hover {
   
   
 }
-.navbar a:hover{
-  background-color: #ebdbb2;
-  color: black;
 
-}
 #banner {
   background-image: url("../static/file.gif");
   background-attachment: fixed;
@@ -148,6 +143,11 @@ button:hover {
 
 .container::-webkit-scrollbar {
   display: none; /* chrome */
+}
+
+.container a {
+  text-decoration: none;
+  color: black;
 }
 
 .container .items {
@@ -226,6 +226,11 @@ button:hover {
   display: flex;
   justify-content: space-around;
   text-align: left;
+}
+
+.rules a{
+  text-decoration: none;
+  color: black;
 }
 
 #text {
