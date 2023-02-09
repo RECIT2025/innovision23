@@ -54,10 +54,10 @@ html {
 }
 
 .page {
-    height: 100vh;
+    min-height: 100vh;
 }
 button {
-  background-color: #418691f9;
+  background-color: #1381fef9;
   backdrop-filter: blur(13px);
   border: none;
   color: white;
@@ -68,10 +68,18 @@ button {
   opacity: 85%;
   padding: 1rem;
   margin: 1rem;
+  box-shadow: 0 0 .2rem #fff,
+  0 0 .2rem #fff,
+  0 0 2rem #1381fe,
+  0 0 0.8rem #1381fe,
+  0 0 2.8rem #1381fe,
+  inset 0 0 1.3rem #1381fe; 
 }
 
 .navbar {
   display: flex;
+    flex-wrap: wrap;
+    align-content: center;
   justify-content: center;
   text-align: center;
   border-radius: 10px;
@@ -83,6 +91,7 @@ button {
 }
 
 #tracks{
+  height: 100vh;
   position: relative;
   background-image: url("../static/room_whether.gif");
   background-size: cover;
@@ -165,7 +174,7 @@ button:hover {
 }
 .items{
   background: rgba( 74, 144, 226, 0.3 );
-  min-width: 370px;
+  min-width: 330px;
   
   backdrop-filter: blur( 5.5px );
   -webkit-backdrop-filter: blur( 5.5px );
@@ -254,6 +263,9 @@ button:hover {
 #dates {
   font-family: sans-serif;
   background-image: url("../static/gifs/cyber.gif");
+}
+#dates  h3 {
+    font-size: 1.6rem;
 }
 .date-con {
   display: flex;
@@ -523,15 +535,6 @@ ul {
   color: black;
 }
 @media only screen and (max-width: 430px) {
-  button {
-    background-color: #60a5fa;
-    border: none;
-    color: white;
-    padding: auto;
-    margin-left: 10rem;
-    margin-top: 20px;
-    opacity: 85%;
-    }
     .it{
 
       background-color:white;
