@@ -60,23 +60,42 @@ h2 {
   width: 100vw;
   height: 100vh;
 }
-.navbar {
-  background-color: black;
-  overflow: hidden;
-  display: flex;
-}
+button{
+  background-color:#60a5fa;
+  border: none;
+  color: white;
+  padding: 15px 32px ;
+  padding-left: 13px;
+  padding-right: 14px;
+  text-align: center;
+  text-decoration: none;
+  display: flexbox;
+  margin-left: 10rem;
+  font-size: 16px;
+  border-radius: 10px;
+  opacity: 85%;
+  }
+  
+
 .navbar a {
-  float: right;
+   
   color: white;
   text-align: center;
   margin-top: 10px;
   padding: 20px;
+  display: flexbox;
+  justify-content: space-evenly;
   text-decoration: solid;
+  border-radius: 10px;
 }
 
-.navbar a:hover {
-  background-color: #ebdbb2;
-  color: black;
+button:hover {
+  transform: scale(1.08);
+  opacity: 100%;
+  transition:0.3s ease-in-out;
+  background-color:#6366f1;
+  
+  
 }
 #banner {
   background-image: url("../static/file.gif");
@@ -326,6 +345,10 @@ ul {
 #dem{
   margin-left: 7rem;
   margin-bottom: 44px;
+  position: absolute;
+  right:8rem;
+  font-size: 2rem;
+ 
 }
 #rulesbg{
   
@@ -334,15 +357,14 @@ ul {
 }
 .ru{
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
   color:#ECEFF4;
   position: absolute;
   display: block;
-  
-
 }
 .front{
   margin-bottom:9px;
+  
 }
 
 #rulimg{
@@ -354,7 +376,7 @@ ul {
   flex-direction:column;
   align-items: center;
 }
-#heading{
+.heading{
   color: white;
   font-size: 80px;
     color: #fff;
@@ -378,4 +400,17 @@ ul {
   padding-bottom: 2rem;
   text-align: left;
   color:black;
+}
+@media only screen and (max-width: 430px) {
+  button{
+    background-color:#60a5fa;
+    border: none;
+    color: white;
+    padding: auto ;
+    margin-left: 10rem;
+    margin-top: 20px;
+    opacity: 85%;
+    }
+  
+
 }
