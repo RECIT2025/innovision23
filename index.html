@@ -9,28 +9,28 @@
     <link rel="icon" type="image/x-icon" href="./static/220 - Copy.png">
     <link rel="stylesheet" href="./css/style.css" />
 
-    <script src ="index.js"></script>
+    <script src="index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <script>
 
 
-  $(document).ready(function() {
-  $("button").on("click", function(event) {
-    var hash = $(this).attr("data-target"),
-      target = $("#" + hash);
+    $(document).ready(function () {
+        $("button").on("click", function (event) {
+            var hash = $(this).attr("data-target"),
+                target = $("#" + hash);
 
-    event.preventDefault();
-    $("html, body").animate({
-        scrollTop: $(target).offset().top
-      },
-      800,
-      function() {
-        window.location.hash = hash;
-      }
-    );
-  });
-});
+            event.preventDefault();
+            $("html, body").animate({
+                scrollTop: $(target).offset().top
+            },
+                800,
+                function () {
+                    window.location.hash = hash;
+                }
+            );
+        });
+    });
 
 
 </script>
@@ -38,10 +38,10 @@
 
 
 <body id="body">
-    <button onclick="topFunction()" id="myBtn"><img src="./static/icons8-scroll-up-50.png" alt="" ></button>
-<div id="particles-js"></div>
-<script src="particles.js"></script>
-<script src="app.js"></script>
+    <button onclick="topFunction()" id="myBtn"><img src="./static/icons8-scroll-up-50.png" alt=""></button>
+    <div id="particles-js"></div>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
     <div id="banner" class="page">
         <div class="header1" style="display: flex; justify-content: space-evenly">
             <img alt="iic-logo" src="./static/iic.png" />
@@ -54,19 +54,21 @@
                 <img class="banimg" src="./static/220 - Copy.png" />
             </center>
         </div>
-        <div class="navbar">
-            <!--<button><a href="#prizes">Prizes</a></button>-->
-            <button data-target="rules" type="button" class="topbtn">Rules</button>
-            <button data-target="tracks" class="topbtn">Tracks</button>
-            <button data-target="dates" class="topbtn">Dates</button>
-            <button data-target="contact" class="topbtn">Contact</button>
-        </div>
-        <center><h1 class="swipe">SWIPE RIGHT >>>></h1></center>
     </div>
+    <div class="navbar">
+        <!--<button><a href="#prizes">Prizes</a></button>-->
+        <button data-target="rules" type="button" class="topbtn">Rules</button>
+        <button data-target="tracks" class="topbtn">Tracks</button>
+        <button data-target="dates" class="topbtn">Dates</button>
+        <button data-target="contact" class="topbtn">Contact</button>
+    </div>
+    <center>
+        <h1 class="swipe">SWIPE RIGHT >>>></h1>
+    </center>
 
 
     <div id="tracks" class="page container">
-        
+
         <a href="https://forms.gle/n9ccbmXc9dVsXZiL8">
             <div class="items">
                 <img src="wom.jpg" />
@@ -80,7 +82,7 @@
                     areas such as education, healthcare, and political representation. However, there is still a long
                     way to go in achieving true gender equality. Governments, businesses, and individuals must take
                     active steps to break down systemic barriers and support women's advancement.</p>
-                
+
             </div>
         </a>
         <a href="https://forms.gle/n9ccbmXc9dVsXZiL8">
@@ -98,7 +100,7 @@
                     agriculture. In health, smart systems monitor patients remotely, streamline medical record keeping,
                     and aid in personalized care. In transport, smart systems optimize traffic flow, reduce emissions,
                     and increase the speed and reliability of transportation services.</p>
-                
+
             </div>
         </a>
         <a href="https://forms.gle/n9ccbmXc9dVsXZiL8">
@@ -113,7 +115,7 @@
                     mobility aids to communication devices, enabling them to live more independently. Examples include
                     hearing aids, wheelchairs, adaptive switches, and speech synthesizers. These technologies improve
                     quality of life and provide essential support for daily living.</p>
-               
+
             </div>
         </a>
         <a href="https://forms.gle/n9ccbmXc9dVsXZiL8">
@@ -128,7 +130,7 @@
                     communication and increasing efficiency, ultimately leading to better outcomes for those in need.
                     This can be achieved through the use of AI, machine learning and other cutting-edge technologies.
                 </p>
-              
+
             </div>
         </a>
     </div>
@@ -206,6 +208,30 @@
             </center>
         </div>
     </div>
+    <div id="gallery" class="page">
+        <center class="pmh"><h1>PROMOTION TEAM</h1></center>
+        <div class="gallery">
+            <div class="imgcont" onClick="location.href='https://raxen001.github.io'">
+                <img src="./static/rithesh.jpg" alt="Rithesh S"/><div class="imgtext">RITHESH S</div>
+            </div>
+            <div class="imgcont" onClick="location.href=''">
+                <img src="./static/venkat.jpg" alt="VENKAT KRISHNAN"/><div class="imgtext">VENKAT KRISHNAN R</div>
+            </div>
+            <div class="imgcont" onClick="location.href='https://sailesh18.github.io'">
+                <img src="./static/sailesh.jpg" alt="SAILESH R"/><div class="imgtext">SAILESH R</div>
+            </div>
+            <div class="imgcont" onClick="location.href='https://instagram.com/_saidarshan_official_?igshid=YmMyMTA2M2Y='">
+                <img src="./static/sai.jpg" alt="SAI DARSHAN"/><div class="imgtext">SAI DARSHAN</div>
+            </div>
+            <div class="imgcont">
+                <img src="./static/sathya.jpg" alt="SATHYA"/><div class="imgtext">SATHYA</div>
+            </div>
+            <div class="imgcont">
+                <img src="./static/priya.jpg" alt="PRIYA VIJAY"/><div class="imgtext">PRIYA VIJAY</div>
+            </div>
+        </div>
+    </div>
+
 </body>
 <footer>
     <div id="footer" class="foot-cont">

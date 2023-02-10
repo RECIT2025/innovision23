@@ -675,3 +675,81 @@ ul {
   text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
   0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
 }
+
+.gallery {
+  max-height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content:center;
+    align-items: center;
+    align-content:space-between;
+    gap: 1vw;
+  /* hide scrollbar */
+  overflow-y: hidden;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
+}
+.pmh {
+    margin-top: 70px;
+}
+.gallery::-webkit-scrollbar {
+  display: none; /* chrome */
+}
+.gallery img {
+    object-fit:cover;
+    width: 21rem;
+    height: 30rem;
+
+  box-shadow: 0 0 .2rem #fff,
+  0 0 .2rem #fff,
+  0 0 2rem #1381fe,
+  0 0 0.8rem #1381fe,
+  0 0 2.8rem #1381fe,
+}
+
+.imgcont {
+    margin: 40px;
+    position: relative;
+    overflow: hidden;
+    border-style: solid;
+    border-radius: 10px;
+  box-shadow: 50px 50px 50px rgba(145, 92, 182, 0.4);
+}
+
+.imgtext {
+  position: absolute;
+  bottom:0;
+  width: 100%;
+  opacity:0;
+  color: white;
+  background-color: black;
+  background: black;
+  text-align: center;
+  padding: 1rem;
+}
+
+img:hover { 
+  box-shadow: 0 0 .2rem #fff,
+  0 0 .2rem #fff,
+  0 0 2rem #1381fe,
+  0 0 0.8rem #1381fe,
+  0 0 2.8rem #1381fe,
+  inset 0 0 1.3rem #1381fe; 
+}
+
+.imgcont:hover .imgtext {
+  opacity: 1;
+}
+/* Portrait and Landscape */
+@media only screen and (max-width: 430px) {
+.imgtext {
+    opacity: 1;
+}
+
+}
+#gallery {
+    color: white;
+  text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+    0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+}
