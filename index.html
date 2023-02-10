@@ -9,10 +9,31 @@
     <link rel="icon" type="image/x-icon" href="./static/220 - Copy.png">
     <link rel="stylesheet" href="./css/style.css" />
 
-    <script src="index.js"></script>
+    <script src ="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
+<script>
 
 
+  $(document).ready(function() {
+  $("button").on("click", function(event) {
+    var hash = $(this).attr("data-target"),
+      target = $("#" + hash);
+
+    event.preventDefault();
+    $("html, body").animate({
+        scrollTop: $(target).offset().top
+      },
+      800,
+      function() {
+        window.location.hash = hash;
+      }
+    );
+  });
+});
+
+
+</script>
 
 
 
@@ -20,6 +41,7 @@
 <div id="particles-js"></div>
 <script src="particles.js"></script>
 <script src="app.js"></script>
+    <button onclick="topFunction()" id="myBtn">Top</button>
     <div id="banner" class="page">
         <div class="header1" style="display: flex; justify-content: space-evenly">
             <img alt="iic-logo" src="./static/iic.png" />
@@ -34,10 +56,10 @@
         </div>
         <div class="navbar">
             <!--<button><a href="#prizes">Prizes</a></button>-->
-            <button><a href="#rules">Rules</a></button>
-            <button><a href="#tracks">Tracks</a></button>
-            <button><a href="#dates">Dates</a></button>
-            <button><a href="#footer">Contact</a></button>
+            <button data-target="rules" type="button">Rules</button>
+            <button data-target="tracks">Tracks</button>
+            <button data-target="dates">Dates</button>
+            <button data-target="contact">Contact</button>
         </div>
     </div>
 
@@ -57,10 +79,7 @@
                     areas such as education, healthcare, and political representation. However, there is still a long
                     way to go in achieving true gender equality. Governments, businesses, and individuals must take
                     active steps to break down systemic barriers and support women's advancement.</p>
-                <div class="tags">
-                    <p>Members allowed to participate</p>
-                    <p>3 Members per team</p>
-                </div>
+                
             </div>
         </a>
         <a href="https://forms.gle/n9ccbmXc9dVsXZiL8">
@@ -78,10 +97,7 @@
                     agriculture. In health, smart systems monitor patients remotely, streamline medical record keeping,
                     and aid in personalized care. In transport, smart systems optimize traffic flow, reduce emissions,
                     and increase the speed and reliability of transportation services.</p>
-                <div class="tags">
-                    <p>Members allowed to participate</p>
-                    <p>3 Members per team</p>
-                </div>
+                
             </div>
         </a>
         <a href="https://forms.gle/n9ccbmXc9dVsXZiL8">
@@ -96,10 +112,7 @@
                     mobility aids to communication devices, enabling them to live more independently. Examples include
                     hearing aids, wheelchairs, adaptive switches, and speech synthesizers. These technologies improve
                     quality of life and provide essential support for daily living.</p>
-                <div class="tags">
-                    <p>Members allowed to participate</p>
-                    <p>3 Members per team</p>
-                </div>
+               
             </div>
         </a>
         <a href="https://forms.gle/n9ccbmXc9dVsXZiL8">
@@ -114,10 +127,7 @@
                     communication and increasing efficiency, ultimately leading to better outcomes for those in need.
                     This can be achieved through the use of AI, machine learning and other cutting-edge technologies.
                 </p>
-                <div class="tags">
-                    <p>Members allowed to participate</p>
-                    <p>3 Members per team</p>
-                </div>
+              
             </div>
         </a>
     </div>
@@ -198,7 +208,7 @@
 </body>
 <footer>
     <div id="footer" class="foot-cont">
-        <div class="header">
+        <div class="header" id="contact">
             <h1>Any queries feel free to mail us back</h1>
         </div>
         <p id="c">Contact</p>
