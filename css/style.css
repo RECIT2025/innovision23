@@ -633,9 +633,6 @@ ul {
   font-family: sans-serif;
   font-size: 50px;
   color: white;
-  background-image:url(../static/gifs/room_whether.gif);
-  background-position: center;
-  background-attachment: fixed;
 }
 .location{
   position: relative;
