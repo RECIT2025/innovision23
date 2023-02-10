@@ -297,6 +297,9 @@ ol .it:hover {
   align-content: center;
   gap: 0.5vw;
 }
+#dates small {
+    font-size: 2rem;
+}
 #dates h3 {
   font-size: 1.6rem;
 }
@@ -308,6 +311,21 @@ ol .it:hover {
   align-items: center;
   align-content: center;
   gap: 0.5vw;
+}
+
+.ct-x {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+}
+.ct-y {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
 }
 
 .date-box {
