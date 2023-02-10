@@ -9,12 +9,35 @@
     <link rel="icon" type="image/x-icon" href="./static/220 - Copy.png">
     <link rel="stylesheet" href="./css/style.css" />
 
-    <script src="index.js"></script>
+    <script src ="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
+<script>
 
 
+  $(document).ready(function() {
+  $("button").on("click", function(event) {
+    var hash = $(this).attr("data-target"),
+      target = $("#" + hash);
+
+    event.preventDefault();
+    $("html, body").animate({
+        scrollTop: $(target).offset().top
+      },
+      800,
+      function() {
+        window.location.hash = hash;
+      }
+    );
+  });
+});
+
+
+</script>
 
 <body id="body">
+    <button onclick="topFunction()" id="myBtn">Top</button>
+
     <div id="banner" class="page">
         <div class="header1" style="display: flex; justify-content: space-evenly">
             <img alt="iic-logo" src="./static/iic.png" />
@@ -29,10 +52,10 @@
         </div>
         <div class="navbar">
             <!--<button><a href="#prizes">Prizes</a></button>-->
-            <button><a href="#rules">Rules</a></button>
-            <button><a href="#tracks">Tracks</a></button>
-            <button><a href="#dates">Dates</a></button>
-            <button><a href="#footer">Contact</a></button>
+            <button data-target="rules" type="button">Rules</button>
+            <button data-target="tracks">Tracks</button>
+            <button data-target="dates">Dates</button>
+            <button data-target="contact">Contact</button>
         </div>
     </div>
 
@@ -181,7 +204,7 @@
 </body>
 <footer>
     <div id="footer" class="foot-cont">
-        <div class="header">
+        <div class="header" id="contact">
             <h1>Any queries feel free to mail us back</h1>
         </div>
         <p id="c">Contact</p>
