@@ -83,6 +83,7 @@ button {
   0 0 2.8rem #1381fe,
   inset 0 0 1.3rem #1381fe; 
 }
+
 #myBtn {
   position: fixed;
   bottom: 20px; 
@@ -236,7 +237,7 @@ button:hover {
 .desc {
   margin: 10px;
   text-align: center;
-  font-family: 
+  font-family: sad;
 }
 .items img {
   border-radius: 20px;
@@ -540,7 +541,7 @@ ul {
 #text {
   color: white;
   font-size: larger;
-  font-family: 
+  font-family: dsf;
 }
 .rul{
   
@@ -570,7 +571,7 @@ ul {
     font-family: "saucer";
   color: white;
   font-size: 80px;
-  font-family: 
+  font-family: adsf;
   color: #fff;
   text-align: center;
   text-shadow: 0 0 20px #fff, 0 0 30px #CC241D, 0 0 40px #CC241D,
