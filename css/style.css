@@ -18,19 +18,6 @@
   --color-orange: #d65d0e;
   --color-lightorange: #fe8019;
 }
-* {
-  padding: 0;
-  margin: 0;
-}
-html {
-  scroll-behavior: smooth;
-  background-color: black;
-}
-
-#nob {
-  width: 80px;
-  object-fit: contain;
-}
 
 @font-face {
   font-family: "blox";
@@ -52,6 +39,25 @@ html {
   font-family: "saucer";
   src: url("../static/fonts/SaucerBB.ttf");
 }
+@font-face {
+  font-family: "opensans";
+  src: url("../static/fonts/OpenSans-Regular.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+font-family: "opensans";
+  scroll-behavior: smooth;
+  background-color: #1d2021;
+}
+
+#nob {
+  width: 80px;
+  object-fit: contain;
+}
+
 
 .page {
   min-height: 100vh;
@@ -77,8 +83,7 @@ button {
   inset 0 0 1.3rem #1381fe; 
 }
 #myBtn {
-   
-  position: fixed;  
+  position: fixed;
   bottom: 20px; 
   right: 30px; 
   z-index: 99; 
@@ -558,12 +563,13 @@ ul {
   align-items: center;
 }
 .heading {
+    font-family: "saucer";
   color: white;
   font-size: 80px;
   color: #fff;
   text-align: center;
-  text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 5px #e5e9f0, 0 0 5px #e5e9f0,
-    0 0 10px #e5e9f0, 0 0 2px #e5e9f0, 0 0 2px #e5e9f0;
+  text-shadow: 0 0 20px #fff, 0 0 30px #CC241D, 0 0 40px #CC241D,
+    0 0 50px #CC241D, 0 0 60px #CC241D, 0 0 70px #CC241D, 0 0 80px #CC241D;
 }
 
 .box {
@@ -618,4 +624,25 @@ ul {
     top: 0;
     left: 0;
     backdrop-filter: blur(10px);
+}
+.swipe-img{
+  gap: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  font-size: 50px;
+  color: white;
+  background-image:url(../static/gifs/room_whether.gif);
+  background-position: center;
+  background-attachment: fixed;
+}
+.location{
+  position: relative;
+  top: 0;
+  left: 10vw;
+  transition: font-size 1s ease-in;
+}
+.location:hover{
+  font-size: 21px;
 }
