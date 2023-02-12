@@ -2,35 +2,35 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Innovision23</title>
-    <link rel="icon" type="image/x-icon" href="./static/220 - Copy.png">
-    <link rel="stylesheet" href="./css/style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Innovision23</title>
+  <link rel="icon" type="image/x-icon" href="./static/220 - Copy.png">
+  <link rel="stylesheet" href="./css/style.css" />
 
-    <script src="index.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <script>
 
 
-    $(document).ready(function () {
-        $("button").on("click", function (event) {
-            var hash = $(this).attr("data-target"),
-                target = $("#" + hash);
+  $(document).ready(function () {
+    $("button").on("click", function (event) {
+      var hash = $(this).attr("data-target"),
+        target = $("#" + hash);
 
-            event.preventDefault();
-            $("html, body").animate({
-                scrollTop: $(target).offset().top
-            },
-                800,
-                function () {
-                    window.location.hash = hash;
-                }
-            );
-        });
+      event.preventDefault();
+      $("html, body").animate({
+        scrollTop: $(target).offset().top
+      },
+        800,
+        function () {
+          window.location.hash = hash;
+        }
+      );
     });
+  });
 
 
 </script>
@@ -38,256 +38,263 @@
 
 
 <body id="body">
-    <button onclick="topFunction()" id="myBtn"><img src="./static/icons8-scroll-up-50.png" alt=""></button>
-    <div id="particles-js"></div>
-    <script src="particles.js"></script>
-    <script src="app.js"></script>
-    <div id="banner" class="page">
-        <div class="header1" style="display: flex; justify-content: space-evenly">
-            <img alt="iic-logo" src="./static/iic.png" />
-            <img alt="rajalakshmi" src="./static/rec logo.png" />
-            <img alt="IIC" src="./static/iiic logo.png" />
-        </div>
-
-        <div class="banimgdiv">
-            <center>
-                <img class="banimg" src="./static/220 - Copy.png" />
-            </center>
-        </div>
-        <div class="navbar">
-            <!--<button><a href="#prizes">Prizes</a></button>-->
-            <button data-target="rules" type="button" class="topbtn">Rules</button>
-            <button data-target="tracks" class="topbtn">Tracks</button>
-            <button data-target="dates" class="topbtn">Dates</button>
-            <button data-target="contact" class="topbtn">Contact</button>
-        </div>
-    </div>
-    <center>
-        <h1 class="swipe">SWIPE RIGHT >>>></h1>
-    </center>
-
-
-    <div id="tracks" class="page container">
-
-        <a href="https://forms.gle/n9ccbmXc9dVsXZiL8">
-            <div class="items">
-                <img src="../innovision23/static/wom.jpg" />
-                <br>
-                <center>
-                    <h2 class="poweroid">POWEROID</h2><br>
-                </center>
-                <p class="desc">Women skill Development</p>
-                <br>
-                <p class="desc">In 2023, women empowerment continues to be a global priority, with progress made in many
-                    areas such as education, healthcare, and political representation. However, there is still a long
-                    way to go in achieving true gender equality. Governments, businesses, and individuals must take
-                    active steps to break down systemic barriers and support women's advancement.</p>
-
-            </div>
-        </a>
-        <a href="https://forms.gle/n9ccbmXc9dVsXZiL8">
-            <div class="items">
-                <img src=".//static/health.jpg" />
-                <br>
-                <center>
-                    <h2>BASIRICH</h2><br>
-                </center>
-                <p class="desc">
-                    Smart system on Food, Agriculture, Water, Education, Health care and
-                    Transportation
-                </p><br>
-                <p class="desc">Smart systems are revolutionizing the way we approach health, transport, and
-                    agriculture. In health, smart systems monitor patients remotely, streamline medical record keeping,
-                    and aid in personalized care. In transport, smart systems optimize traffic flow, reduce emissions,
-                    and increase the speed and reliability of transportation services.</p>
-
-            </div>
-        </a>
-        <a href="https://forms.gle/n9ccbmXc9dVsXZiL8">
-            <div class="items">
-                <img src="old.jpg" />
-                <br>
-                <center>
-                    <h2>UTILEN</h2><br>
-                </center>
-                <p class="desc">Assistive Technologies for elderly and special children</p><br>
-                <p class="desc">Assistive technologies help elderly and special needs children with various tasks, from
-                    mobility aids to communication devices, enabling them to live more independently. Examples include
-                    hearing aids, wheelchairs, adaptive switches, and speech synthesizers. These technologies improve
-                    quality of life and provide essential support for daily living.</p>
-
-            </div>
-        </a>
-        <a href="https://forms.gle/n9ccbmXc9dVsXZiL8">
-            <div class="items">
-                <img src="comm.jpg" />
-                <br>
-                <center>
-                    <h2>EDIFEE</h2><br>
-                </center>
-                <p class="desc">Intelligent Technology towards Community helpers.</p><br>
-                <p class="desc">Intelligent technology can aid community helpers by automating tasks, improving
-                    communication and increasing efficiency, ultimately leading to better outcomes for those in need.
-                    This can be achieved through the use of AI, machine learning and other cutting-edge technologies.
-                </p>
-
-            </div>
-        </a>
-        <a href="https://forms.gle/n9ccbmXc9dVsXZiL8">
-            <div class="items">
-                <img src=".//static/sec.jpg" />
-                <br>
-                <center>
-                    <h2>SAFETY</h2><br>
-                </center>
-                <p class="desc">Development of security in the recent times</p><br>
-                <p class="desc">The development of security has undergone significant advancements in recent years,
-                    driven by the increasing need to protect against cyber threats and the growing reliance on
-                    technology. This has resulted in the integration of advanced technologies such as artificial
-                    intelligence and machine learning in security systems, as well as increased focus on user awareness
-                    and education.</p>
-            </div>
-        </a>
+  <button onclick="topFunction()" id="myBtn"><img src="./static/icons8-scroll-up-50.png" alt=""></button>
+  <div id="particles-js"></div>
+  <script src="particles.js"></script>
+  <script src="app.js"></script>
+  <div id="banner" class="page">
+    <div class="header1" style="display: flex; justify-content: space-evenly">
+      <img alt="iic-logo" src="./static/iic.png" />
+      <img alt="rajalakshmi" src="./static/rec logo.png" />
+      <img alt="IIC" src="./static/iiic logo.png" />
     </div>
 
-    <div id="rulesbg" class="page  rules">
-
-        <h1 class="heading" id="rules">RULES</h1>
-        <div class="box">
-            <div class="it container rul">
-
-                <h1 class="ru glow" id="dem">Rules for Project Demo</h1>
-
-                <p id="text" style="padding-left: 10px">1. Maximum 4 per Team</p>
-                <p id="text" style="padding-left: 10px">2. Abstract must be feasible
-                </p>
-                <p id="text" style="padding-left: 10px">3. All the objectives given in abstract should be showcased
-                    during
-                    Project Demo.
-                </p>
-
-            </div>
-
-            <div class="it container rul front">
-                <h1 class="ru  front" style="padding-left:10px; ">Rules for Forefront Ideas Presentation</h1>
-
-                <p id="text" style="padding-left: 10px">1. Maximum 2 per Team</li>
-                <p id="text" style="padding-left: 10px">2. Finalized Presentation slides should not exceed more than 20.
-                    </li>
-                <p id="text" style="padding-left: 10px">3. Content must be precise to demonstrate the idea.</li>
-
-
-            </div>
-        </div>
+    <div class="banimgdiv">
+      <center>
+        <img class="banimg" src="./static/220 - Copy.png" />
+      </center>
     </div>
-
-    <div id="dates" class="dates page date-con">
-        <div class='dt-con'>
-            <div class="date-box abstract">
-                <span>
-                    <h2>23-02-2023</h2>
-                </span>
-                <span>
-                    <img src="./static/clock.avif" />
-                </span>
-                <span>
-                    <h3>LAST DATE FOR REGISTRATION</h3>
-                </span>
-            </div>
-            <div class="date-box event">
-                <span>
-                    <h2>26-02-2023</h2>
-                </span>
-                <span>
-                    <img src="./static/ppaer.avif" />
-                </span>
-                <span>
-                    <h3>SUBMISSION OF PPT</h3>
-                </span>
-            </div>
-            <div class="date-box last">
-                <span>
-                    <h2>04-03-2023</h2>
-                </span>
-                <span>
-                    <img src="./static/1424222.avif" />
-                </span>
-                <span>
-                    <h3>EVENT DATE</h3>
-                </span>
-            </div>
-        </div>
-        <div class="ct-down">
-            <center>
-                <span id="count-down"></span>
-            </center>
-        </div>
+    <div class="navbar">
+      <button type='button' onClick="location.href='https://forms.gle/n9ccbmXc9dVsXZiL8'"><img src="./static/edit.png" /
+          style="width: 30px;">REGISTER</button>
+      <button data-target="tracks" class="topbtn">Tracks</button>
+      <button data-target="rules" type="button" class="topbtn">Rules</button>
+      <button data-target="dates" class="topbtn">Dates</button>
+      <button data-target="contact" class="topbtn">Contact</button>
     </div>
-    <div id="gallery" class="page">
-        <center class="pmh">
-            <h1>PROMOTION TEAM</h1>
+  </div>
+
+  <div id="description" class="page">
+    <p>We the department of Information Technology are extremely honored to present to you the 9th series of Innovision,
+      the flagship event of our department. Join in to showcase your skills by showcasing your projects and compete with
+      the best minds, to challenge yourselves and win exciting prizes. Hurry up and grab your spot before we run out of
+      seats! Looking forward to having you all on the 4th March.</p>
+  </div>
+
+  <center>
+    <h1 class="heading">TRACKS</h1>
+  </center>
+  <center>
+    <h1 class="swipe">SWIPE RIGHT >>>></h1>
+  </center>
+  <div id="tracks" class="page container">
+
+    <a href="https://forms.gle/n9ccbmXc9dVsXZiL8">
+      <div class="items">
+        <img src="./static/wom.jpg" />
+        <br>
+        <center>
+          <h2 class="poweroid">POWEROID</h2><br>
         </center>
-        <div class="gallery">
-            <div class="imgcont" onClick="location.href='https://raxen001.github.io'">
-                <img src="./static/rithesh.jpg" alt="Rithesh S" />
-                <div class="imgtext">RITHESH S</div>
-            </div>
-            <div class="imgcont" onClick="location.href=''">
-                <img src="./static/venkat.jpg" alt="VENKAT KRISHNAN" />
-                <div class="imgtext">VENKAT KRISHNAN R</div>
-            </div>
-            <div class="imgcont" onClick="location.href='https://sailesh18.github.io'">
-                <img src="./static/sailesh.jpg" alt="SAILESH R" />
-                <div class="imgtext">SAILESH R</div>
-            </div>
-            <div class="imgcont"
-                onClick="location.href='https://instagram.com/_saidarshan_official_?igshid=YmMyMTA2M2Y='">
-                <img src="./static/sai.jpg" alt="SAI DARSHAN" />
-                <div class="imgtext">SAI DARSHAN</div>
-            </div>
-            <div class="imgcont">
-                <img src="./static/sathya.jpg" alt="SATHYA" />
-                <div class="imgtext">SATHYA</div>
-            </div>
-            <div class="imgcont">
-                <img src="./static/priya.jpg" alt="PRIYA VIJAY" />
-                <div class="imgtext">PRIYA VIJAY</div>
-            </div>
-        </div>
-    </div>
+        <p class="desc">Women skill Development</p>
+        <br>
+        <p class="desc">In 2023, women empowerment continues to be a global priority, with progress made in many
+          areas such as education, healthcare, and political representation. However, there is still a long
+          way to go in achieving true gender equality. Governments, businesses, and individuals must take
+          active steps to break down systemic barriers and support women's advancement.</p>
 
-</body>
-<footer>
-    <div id="footer" class="foot-cont">
-        <div class="header" id="contact">
-            <h1>Any queries feel free to mail us back</h1>
-        </div>
-        <p id="c">Contact</p>
-        <p id="c">
-            <a style="text-decoration: none; padding-top: -10px">innovision2023@rajalakshmi.edu.in</a>
+      </div>
+    </a>
+    <a href="https://forms.gle/n9ccbmXc9dVsXZiL8">
+      <div class="items">
+        <img src=".//static/health.jpg" />
+        <br>
+        <center>
+          <h2>BASIRICH</h2><br>
+        </center>
+        <p class="desc">
+          Smart system on Food, Agriculture, Water, Education, Health care and
+          Transportation
+        </p><br>
+        <p class="desc">Smart systems are revolutionizing the way we approach health, transport, and
+          agriculture. In health, smart systems monitor patients remotely, streamline medical record keeping,
+          and aid in personalized care. In transport, smart systems optimize traffic flow, reduce emissions,
+          and increase the speed and reliability of transportation services.</p>
+
+      </div>
+    </a>
+    <a href="https://forms.gle/n9ccbmXc9dVsXZiL8">
+      <div class="items">
+        <img src="old.jpg" />
+        <br>
+        <center>
+          <h2>UTILEN</h2><br>
+        </center>
+        <p class="desc">Assistive Technologies for elderly and special children</p><br>
+        <p class="desc">Assistive technologies help elderly and special needs children with various tasks, from
+          mobility aids to communication devices, enabling them to live more independently. Examples include
+          hearing aids, wheelchairs, adaptive switches, and speech synthesizers. These technologies improve
+          quality of life and provide essential support for daily living.</p>
+
+      </div>
+    </a>
+    <a href="https://forms.gle/n9ccbmXc9dVsXZiL8">
+      <div class="items">
+        <img src="comm.jpg" />
+        <br>
+        <center>
+          <h2>EDIFEE</h2><br>
+        </center>
+        <p class="desc">Intelligent Technology towards Community helpers.</p><br>
+        <p class="desc">Intelligent technology can aid community helpers by automating tasks, improving
+          communication and increasing efficiency, ultimately leading to better outcomes for those in need.
+          This can be achieved through the use of AI, machine learning and other cutting-edge technologies.
         </p>
-        <br />
 
-        <div class="con">
-            <div>
-                <ul>
-                    <li>
-                        <img src="./foot2.jpg" id="pic" style="width: 30px; height: 30px; border-radius: 50%" />
-                    </li>
-                    <li>Dr.Priya Vijay,Professor and Head/IT</li>
-                </ul>
-            </div>
-            <br />
-            <div>
-                <ul>
-                    <li>
-                        <img src="./foot2.jpg" style="width: 30px; height: 30px; border-radius: 50%" />
-                    </li>
-                    <li>Dr.A.Sathya,Associate Professor/IT</li>
-                </ul>
-            </div>
-        </div>
+      </div>
+    </a>
+    <a href="https://forms.gle/n9ccbmXc9dVsXZiL8">
+      <div class="items">
+        <img src=".//static/sec.jpg" />
+        <br>
+        <center>
+          <h2>SAFETY</h2><br>
+        </center>
+        <p class="desc">Development of security in the recent times</p><br>
+        <p class="desc">The development of security has undergone significant advancements in recent years,
+          driven by the increasing need to protect against cyber threats and the growing reliance on
+          technology. This has resulted in the integration of advanced technologies such as artificial
+          intelligence and machine learning in security systems, as well as increased focus on user awareness
+          and education.</p>
+      </div>
+    </a>
+  </div>
+
+  <div id="rulesbg" class="page  rules">
+
+    <h1 class="heading" id="rules">RULES</h1>
+    <div class="box">
+      <div class="it container rul">
+
+        <h1 class="ru glow" id="dem">Rules for Project Demo</h1>
+
+        <p id="text" style="padding-left: 10px">1. Maximum 4 per Team</p>
+        <p id="text" style="padding-left: 10px">2. Abstract must be feasible
+        </p>
+        <p id="text" style="padding-left: 10px">3. All the objectives given in abstract should be showcased
+          during
+          Project Demo.
+        </p>
+
+      </div>
     </div>
+  </div>
+
+  <div id="dates" class="dates page date-con">
+    <div class='dt-con'>
+      <div class="date-box abstract">
+        <span>
+          <h2>23-02-2023</h2>
+        </span>
+        <span>
+          <img src="./static/clock.avif" />
+        </span>
+        <span>
+          <h3>LAST DATE FOR REGISTRATION</h3>
+        </span>
+      </div>
+      <div class="date-box event">
+        <span>
+          <h2>26-02-2023</h2>
+        </span>
+        <span>
+          <img src="./static/ppaer.avif" />
+        </span>
+        <span>
+          <h3>SUBMISSION OF PPT</h3>
+        </span>
+      </div>
+      <div class="date-box last">
+        <span>
+          <h2>04-03-2023</h2>
+        </span>
+        <span>
+          <img src="./static/1424222.avif" />
+        </span>
+        <span>
+          <h3>EVENT DATE</h3>
+        </span>
+      </div>
+    </div>
+    <span><center><h2 class="heading" style="font-size: 1rem; padding: 30px">TIME LEFT</h2></center></span>
+    <div class="ct-down">
+      <center>
+        <span id="count-down"></span>
+      </center>
+    </div>
+  </div>
+  <div id="gallery" class="page">
+    <center class="pmh">
+      <h1>COORDINATORS</h1>
+    </center>
+    <div class="gallery">
+      <div onClick="location.href='#conta'" class="imgcont">
+        <img src="./static/sathya.jpg" alt="SATHYA" />
+        <div class="imgtext">SATHYA</div>
+      </div>
+      <div onClick="location.href='#conta'" class="imgcont">
+        <img src="./static/sathya.jpg" alt="PRIYA VIJAY" />
+        <div class="imgtext">PRIYA VIJAY</div>
+      </div>
+      <div onClick="location.href='#conta'" class="imgcont">
+        <img src="./static/sathya.jpg" alt="VARUN SAI" />
+        <div class="imgtext">VARUN SAI</div>
+      </div>
+      <div onClick="location.href='#conta'" class="imgcont">
+        <img src="./static/sathya.jpg" alt="HARSHITHA" />
+        <div class="imgtext">HARSHITHA</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="gallery" class="page">
+    <center class="pmh">
+      <h1>PROMOTION TEAM</h1>
+    </center>
+    <div class="gallery">
+      <div class="imgcont" onClick="location.href='https://raxen001.github.io'">
+        <img src="./static/rithesh.jpg" alt="Rithesh S" />
+        <div class="imgtext">RITHESH S</div>
+      </div>
+      <div class="imgcont" onClick="location.href=''">
+        <img src="./static/venkat.jpg" alt="VENKAT KRISHNAN" />
+        <div class="imgtext">VENKAT KRISHNAN R</div>
+      </div>
+      <div class="imgcont" onClick="location.href='https://sailesh18.github.io'">
+        <img src="./static/sailesh.jpg" alt="SAILESH R" />
+        <div class="imgtext">SAILESH R</div>
+      </div>
+      <div class="imgcont" onClick="location.href='https://instagram.com/_saidarshan_official_?igshid=YmMyMTA2M2Y='">
+        <img src="./static/sai.jpg" alt="SAI DARSHAN" />
+        <div class="imgtext">SAI DARSHAN</div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<footer class="footer" id="contact">
+  <div class="footercon">
+    <div class="footerrow">
+      <div id="conta" class="footer-col">
+        <h4>STUDENT COORDINATORS</h4>
+        <ul>
+          <li><strong>VARUN SAI</strong>: +91 7904471538</li>
+          <li><strong>HARSHITHA</strong>: +91 8939087750</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>FACULTY COORDINATORS</h4>
+        <ul>
+          <li>Dr.<b>Priya Vijay</b>,Professor and Head/IT</li>
+          <li>Dr.<b>A.Sathya</b>,Associate Professor/IT</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>CONTACT US</h4>
+        <ul>
+          <li><a href="mailto: innovision2023@rajalakshmi.edu.in">innovision2023@rajalakshmi.edu.in</a></li>
+        </ul>
+      </div>
 </footer>
 
 </html>
