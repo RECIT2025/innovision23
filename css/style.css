@@ -48,14 +48,18 @@
   font-family: "neon";
   src: url("../static/fonts/Pennstat.ttf");
 }
+@font-face{
+    font-family: roboto;
+    src: url("../static/fonts/Roboto.ttf")
+}
 * {
   padding: 0;
   margin: 0;
 }
 html {
-font-family: "opensans";
+    font-family: roboto, monospace, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   scroll-behavior: smooth;
-  background-color: #1d2021;
+  background-color: #1c1c1c;
   color: #d8dee9;
 }
 
@@ -139,13 +143,6 @@ button {
 }
 }
 
-#tracks{
-  height: 100vh;
-  position: relative;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-}
 
 button:hover {
   transform: scale(1.08);
@@ -176,8 +173,8 @@ button:hover {
 }
 
 .header1 {
-    background-color: #0f0f0f0f;
-    backdrop-filter: blur(30px);
+    background-color: #0a0a0a0f;
+    backdrop-filter: blur(25px);
 }
 
 .header1 > img {
@@ -187,8 +184,10 @@ button:hover {
 }
 
 #tracks {
-  max-height: 100vh;
+    font-family:'Times New Roman', Times, serif;
+  max-height: 130vh;
   position: relative;
+  font-size: 1.3rem;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -212,8 +211,7 @@ button:hover {
 }
 
 .container .items {
-  width: 25vw;
-  height: 75vh;
+  width: 22vw;
   object-fit: contain;
   color: white;
   border-style: solid;
@@ -234,13 +232,11 @@ button:hover {
   box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #bc13fe,
     0 0 0.8rem #bc13fe, 0 0 2.8rem #bc13fe, inset 0 0 1.3rem #bc13fe;
 
-  position: relative;
   margin: 30px;
   border-radius: 10px;
 }
 
 .tags {
-  font-family: sans-serif;
 
   text-align: center;
   padding: 10px;
@@ -255,13 +251,9 @@ button:hover {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
 }
-.items h2 {
-  
-}
 .desc {
   margin: 10px;
   text-align: center;
-  font-family: sad;
 }
 .items img {
   border-radius: 20px;
@@ -307,7 +299,6 @@ ol .it:hover {
 }
 
 #text {
-  font-family: sans-serif;
   padding-top: 20px;
 }
 
@@ -341,13 +332,11 @@ ol .it:hover {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    justify-content: center;
 }
 .ct-y {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     justify-content: center;
 }
 
@@ -362,7 +351,6 @@ ol .it:hover {
   object-fit: cover;
 
   justify-content: center;
-  align-content: center;
   align-items: center;
   font-size: 1rem;
   text-decoration: none;
@@ -390,7 +378,7 @@ ol .it:hover {
   max-height: 120px;
 }
 #count-down {
-  padding: 10vw;
+  padding: 5vw;
   font-family: clock;
   font-size: 7.5vw;
   color: #fff;
@@ -454,26 +442,22 @@ ol .it:hover {
     background-color: #5a004880;
   backdrop-filter: blur(10px);
     width: 55vw;
-    height: 80vh;
     transition: 0.5s ease-in-out;
     justify-content: center;
-    align-content: center;
     align-items: center;
     position: relative;
     margin: 10px;
     border-radius: 10px;
   }
   .items img {
-    border-radius: 20px;
+    border-radius: 14px;
     padding-top: 10px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
-    height: 130px;
+    width: 300px;
   }
   .tags {
-    font-family: sans-serif;
 
     text-align: center;
     position: absolute;
@@ -514,7 +498,6 @@ footer {
   background-image: url("../static/ft-bg.png");
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-  font-family: sans-serif;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -588,7 +571,6 @@ ul {
 #text {
   color: white;
   font-size: larger;
-  font-family: dsf;
 }
 .rul{
   
@@ -615,7 +597,6 @@ ul {
     font-family: "saucer";
   color: white;
   font-size: 80px;
-  font-family: adsf;
   color: #fff;
   text-align: center;
   text-shadow: 0 0 20px #fff, 0 0 30px #CC241D, 0 0 40px #CC241D,
@@ -680,7 +661,6 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: sans-serif;
   font-size: 50px;
   color: white;
 }
@@ -746,7 +726,7 @@ ul {
   position: absolute;
   bottom:0;
   width: 100%;
-  opacity:0;
+  opacity:1;
   color: white;
   background-color: black;
   background: black;
@@ -763,9 +743,6 @@ ul {
   inset 0 0 1.3rem #1381fe; 
 }
 
-.imgcont:hover .imgtext {
-  opacity: 1;
-}
 /* Portrait and Landscape */
 @media only screen and (max-width: 430px) {
 .imgtext {
