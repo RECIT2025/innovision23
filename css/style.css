@@ -175,6 +175,11 @@ button:hover {
   }
 }
 
+.header1 {
+    background-color: #0f0f0f0f;
+    backdrop-filter: blur(30px);
+}
+
 .header1 > img {
   width: 15vw;
   height: auto;
