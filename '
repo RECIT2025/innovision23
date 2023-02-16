@@ -44,17 +44,13 @@
   background: #555; 
 }
 *{
-    font-family: 'Roboto Condensed', sans-serif;
     padding: 0px;
     margin: 0px;
 }
 
-body {
-}
-
 
 @font-face {
-  font-family: 'clock' !important;
+  font-family: 'clock';
   src: url('../static/fonts/digital-7 (mono).ttf');
 }
 @font-face {
@@ -139,7 +135,7 @@ button {
 .navbar {
   display: flex;
   flex-wrap: wrap;
-  align-content: space-around;
+  align-content: flex-start;
   justify-content: center;
   text-align: center;
   border-radius: 10px;
@@ -184,9 +180,7 @@ button:hover {
 }
 
 .banimgdiv {
-    display: flex;
-    justify-content: center;
-    align-items: top;
+  position: relative;
 }
 
 .banimg {
@@ -205,7 +199,7 @@ button:hover {
 }
 
 .header1 > img {
-  width: 13vw;
+  width: 15vw;
   height: auto;
   object-fit: contain;
 }
@@ -691,8 +685,9 @@ ul {
 }
 
 .gallery {
+  max-height: 100vh;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -743,6 +738,12 @@ ul {
     0 0 0.8rem #1381fe, 0 0 2.8rem #1381fe, inset 0 0 1.3rem #1381fe;
 }
 
+/* Portrait and Landscape */
+@media only screen and (max-width: 430px) {
+  .imgtext {
+    opacity: 1;
+  }
+}
 #gallery {
   color: white;
   text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
@@ -831,8 +832,4 @@ ul {
   .footer-col {
     width: 100%;
   }
-}
-
-.promotion div:hover{
-    cursor: pointer;
 }
