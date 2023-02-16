@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap');
 :root {
   --color-black: #1d2021;
   --color-gray: #282828;
@@ -18,11 +20,35 @@
   --color-orange: #d65d0e;
   --color-lightorange: #fe8019;
 }
-
-@font-face {
-  font-family: 'blox';
-  src: url('../static/fonts/Blox2.ttf');
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
 }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border: 5px solid rgb(255, 255, 255);
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #bc13fe,
+    0 0 0.8rem #bc13fe, 0 0 2.8rem #bc13fe, inset 0 0 1.3rem #bc13fe;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
 @font-face {
   font-family: 'clock';
   src: url('../static/fonts/digital-7 (mono).ttf');
@@ -73,7 +99,8 @@ html {
   min-height: 100vh;
 }
 button {
-  font-family: neon;
+    font-family: 'Roboto Condensed', sans-serif;
+  ;
   font-size: 1.4rem;
   cursor: pointer;
   background-color: #1381fef9;
@@ -125,7 +152,8 @@ button {
   text-decoration: solid;
 }
 
-#description {
+#description{
+  text-align: center;
   font-family: OpenSans-Regular;
   font-size: 50px;
   padding: 10%;
