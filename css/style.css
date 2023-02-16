@@ -160,6 +160,10 @@ button:hover {
   height: 60vh;
 }
 
+.banimg:hover {
+  transform: scale(1.1) rotate(10deg); 
+}
+
 @media only screen and (max-width: 430px) {
   .banimg {
     height: 30vh;
