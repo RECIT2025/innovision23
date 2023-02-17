@@ -302,6 +302,7 @@ ol .it:hover {
 }
 #rulesbg .container{
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 .rules {
   display: flex;
@@ -580,6 +581,8 @@ ul {
 #text {
   color: white;
   font-size: larger;
+  letter-spacing: 1px;
+  
 }
 .rul {
   display: flex;
@@ -828,3 +831,32 @@ ul {
 .promotion div:hover{
     cursor: pointer;
 }
+
+#prizetext{
+  letter-spacing: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 4rem;
+  text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+    0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+}
+.trophy{
+  width: 120px;
+  
+  }
+  @media only screen and (max-width: 430px) {
+    #prizetext{
+      letter-spacing: 1px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      font-size: 1.3rem;
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+        0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+    .trophy{
+      width: 55px;
+      
+      }
+  }
