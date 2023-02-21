@@ -117,8 +117,8 @@ button {
 
 #myBtn {
   position: fixed;
-  bottom: 20px;
   right: 30px;
+  bottom: 20px;
   z-index: 99;
   padding: 0px;
   border: none;
