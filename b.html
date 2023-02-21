@@ -18,7 +18,7 @@
         flex-flow: row wrap;
         justify-content: center;
         align-items: center;
-        text-align: center;
+        text-align: left;
         margin: 50px;
         font-size: 2rem;
         backdrop-filter: blur(50px);
@@ -34,19 +34,36 @@ a {
   padding: 8px;
   background-color: #4e2a55;
 }
+#myBtn{
+    position: fixed;
+  top: 0;
+  right: 30px;
+  z-index: 99;
+  padding: 0px;
+  border: none;
+  outline: none;
+  background-color: none;
+  cursor: pointer;
+
+  border-radius: 80px;
+}
+.info{
+    margin-top: 20px;
+}
+@media only screen and (max-width: 430px) {
+    body{
+        font-size: 1rem;
+    }
+    body img {
+        width: 90%;
+    }
+}
 
 </style>
 <body>
     <button type="button"></button>
-    <button onclick="topFunction()" id="myBtn"><img src="./static/back.png" alt=""></button>
-    <div class="header">
-        <ul>
-            <li><a href="default.asp">Home</a></li>
-            <li><a href="news.asp">News</a></li>
-            <li><a href="contact.asp">Contact</a></li>
-            <li><a href="about.asp">About</a></li>
-          </ul>          
-    </div>
+    <button onclick="topFunction()" id="myBtn" style=""><img src="./static/back.png" alt=""/></button>
+   
     <div id="particles-js"></div>
     <script src="particles.js"></script>
     <script src="app.js"></script>
@@ -83,5 +100,15 @@ Entrepreneurship cell
 Value addition in terms of employment and higher studies
 Dedicated placement cell
 </p>
+<br>
+<div class="info">
+<h1>Department of Information Technology</h1>
+<h2>Vision</h2>
+<p>To be a Department of Excellence in Information Technology Education, Research and Development.</p>
+<h2>Mission</h2>
+<p>To train the students to become highly knowledgeable in the field of Information Technology.
+    To promote continuous learning and research in core and emerging areas.
+    To develop globally competent students with strong foundations, who will be able to adapt to changing technologies.</p>
+</div>
 </body>
 </html>
