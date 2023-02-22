@@ -7,30 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Innovision23</title>
     <link rel="icon" type="image/x-icon" href="./static/220 - Copy.png">
+    <link rel="stylesheet" href="./css/style.css" />
 
     <script src="index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <style>
-    #particles-js canvas {
-  display: block;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  opacity: 1;
-  -webkit-transition: opacity 0.8s ease, -webkit-transform 1.4s ease;
-  transition: opacity 0.8s ease, transform 1.4s ease;
-}
-
-#particles-js {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  z-index: -10;
-  top: 0;
-  left: 0;
-  backdrop-filter: blur(10px);
-}
+  
     body {
         margin-top: 50px;
         display: flex;
@@ -112,15 +95,17 @@ a {
 
 
 <body>
+    <button onclick="topFunction()" id="yBtn"><img src="./static/icons8-scroll-up-50.png" alt=""></button>
+
     <nav>
     <button onClick="location.href='./index.html'" id="btn"  ><img src="./static/back.png" alt="" style="width: 20px;" /></button>
-    <button onclick="topFunction()" id="yBtn"><img src="./static/icons8-scroll-up-50.png" alt=""></button>
     
     </nav>
    
     <div id="particles-js"></div>
     <script src="particles.js"></script>
     <script src="app.js"></script>
+    <div class="scr">
     <img class="ban" src="./static/banner-1.jpg" />
     <br>
     <br>
@@ -171,6 +156,7 @@ a {
 <p>To train the students to become highly knowledgeable in the field of Information Technology.
     To promote continuous learning and research in core and emerging areas.
     To develop globally competent students with strong foundations, who will be able to adapt to changing technologies.</p>
+</div>
 </div>
 </body>
 </html>
