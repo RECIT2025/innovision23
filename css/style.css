@@ -161,7 +161,12 @@ button {
     font-size: 25px;
   }
 }
-
+@media only screen and(max-width:430px){
+  #cs{
+    width: 50px;
+    
+  }
+}
 button:hover {
   transform: scale(1.08);
   opacity: 100%;
