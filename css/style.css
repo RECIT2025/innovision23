@@ -161,13 +161,9 @@ button {
     font-size: 25px;
   }
 }
+
 #cs {
- width: 67px;
-}
-@media only screen and(max-width:430px){
-  #cs{
-    width: 10px;    
-  }
+ width: 5vw;
 }
 button:hover {
   transform: scale(1.08);
